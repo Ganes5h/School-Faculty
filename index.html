@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- css link -->
+    
+    <!-- Animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+    <style>
+      body{
+
+padding: 0;
+margin: 0;
+
+}
+
+    html,body {
+    width: 100%;
+    overflow-x: hidden;
+    }
+        
+    .header {
+    padding: 15px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.header-heading {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.header-heading p {
+    margin: 2px;
+}
+
+.header-heading h1 {
+    margin: 5px;
+    font-size: 45px;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 950px) {
+    .header-heading h1 {
+        font-size: 30px;
+    }
+
+    .maharaj {
+        width: 100px;
+    }
+
+    .finallogo {
+        width: 100px;
+    }
+
+    .header-heading p {
+        margin: 0px;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .header-heading h1 {
+        font-size: 19px;
+    }
+
+    .maharaj {
+        width: 60px;
+    }
+
+    .finallogo {
+        width: 60px;
+    }
+
+    .header-heading p {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .Founder {
+        display: none;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .header-heading h1 {
+        font-size:14px;
+    }
+}
+.heading {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 183, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.parentcard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246, 246, 246);
+    padding: 50px;
+}
+
+.card {
+
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 10px 25px rgba(47, 46, 46, 0.25);
+    margin: 50px;
+    padding: 10px;
+    transition: 0.3s;
+    box-shadow: 0px 10px 20px, rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    transform: translateY(-180px);
+
+    opacity: 0;
+}
+
+.card:hover {
+
+    height: 450px;
+    background: linear-gradient(to top, rgb(255, 255, 255), rgb(255, 255, 255), rgb(227, 227, 227));
+}
+
+.card:hover > img {
+    opacity: 0.5;
+}
+
+.card:hover>.content {
+
+    opacity: 1;
+    transform: translateY(2px);
+}
+
+.card h3 {
+    line-height: 1px;
+}
+.footer {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0d233a;
+
+}
+.fot-sec {
+    width: 300px;
+
+    padding: 15px 50px;
+    color: white;
+    background-color: #0d233a;
+}
+
+.fot-sec h2 {
+    color: rgb(237, 199, 48);
+}
+
+.fot-sec a {
+    text-decoration: none;
+    color: white;
+}
+
+.fot-sec a:hover {
+    color: rgb(180, 169, 125);
+
+}
+.copyright {
+    color: white;
+    background-color: #0d233a;
+    padding-bottom: 10px;
+    width: 100%;
+
+    font-style: normal;
+    text-align: center;
+}
+
+    </style>
+   
+</head>
+
+<body>
+
+    <div class="header">
+        <div><img class="maharaj" src="Maharaj.png" width="130px"></div>
+
+        <div class="header-heading">
+            <p>Vishw Bharat Seva Samiti</p>
+            <p class="Founder">Founder: Guruvarya Parshurambhau Nadihalli</p>
+            <h1>Shri Shivaji Vidyalay, Yellur</h1>
+            <p>Establishment: 1957</p>
+        </div>
+        <div><img class="finallogo" src="Final logo.png" width="130px"></div>
+    </div>
+
+
+    <div class="heading" data-aos="fade-left">
+
+        <h1>School Faculty Members</h1>
+
+    </div>
+    <div class="parentcard" data-aos="fade-left">
+        <div class="card">
+            <img src="Bachikar.JPG" width="300px">
+            <h3>Shri Manohar Bachikar</h3>
+            <p>Head Master</p>
+            <div class="content">
+
+                Experienced and dedicated Headmaster committed to high-quality education, exceptional results, and
+                positive school culture.
+
+            </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+            <img src="Majukar sir.JPG" width="300px">
+            <h3>Shri Sanjay Majukar</h3>
+            <p>Assistant Teacher</p>
+            <div class="content">
+
+                Highly motivated & enthusiastic individual with 33 years of experience in teaching,Taluka leval adarsh
+                shikshak 2018
+                Worked as a R.P.in mathematics workshop sevaral times
+
+            </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+            <img src="HS Lockaluche.JPG" width="300px">
+            <h3>Shri Hemant Lokuluche</h3>
+            <p>Assistant Teacher </p>
+            <p>NCC Officer </p>
+            <div class="content">
+                Enthusiastic teacher and NCC officer who train students in military skills, leadership, discipline, and
+                community service.
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-left">
+            <img src="Prakash N.JPG" width="300px">
+            <h3>Shri Maruti Panter</h3>
+            <p>Assistant Teacher</p>
+            <div class="content">
+                Enthusiastic Learner, having 11 years of teaching experience with the good sense of responsibility.
+            </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+            <img src="https://img.mensxp.com/media/content/2015/Jan/kindsoffacebookprofilephotoswearesickofseeing1_1420801169.jpg"
+                width="300px">
+            <h3>Shri Maruti Panter</h3>
+            <p>Assistant Teacher</p>
+            <div class="content">
+                Enthusiastic Learner, having 11 years of teaching experience with the good sense of responsibility.
+            </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+            <img src="Melage sir.JPG" width="300px">
+            <h3>Shri Santosh Melage</h3>
+            <p>PE Teacher</p>
+            <div class="content">
+                Strives to make a significant contribution to the growth and development of students through innovative
+                teaching styles.
+            </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+            <img src="Vidya Patil.JPG" width="300px" height="300px">
+            <h3>Shri Vidya Patil</h3>
+            <p>Assistant Teacher</p>
+            <div class="content">
+                Rich teaching experience of 11 years. Enthusiastic learner and teacher,Worked as Resource person at
+                Marathi work shop,Worked as a translator at DIET
+            </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+            <img src="Rekha Tr.JPG" width="300px">
+            <h3>Shri Rekha Patil</h3>
+            <p>Assistant Teacher</p>
+            <div class="content">
+                Highly qualified science teacher who inspires curiosity, fosters love of learning, and empowers students
+                to explore the natural world.
+            </div>
+        </div>
+        <div class="card" data-aos="fade-left">
+            <img src="bedare.JPG" width="300px">
+            <h3>Shri Maruti Panter</h3>
+            <p>Assistant Teacher</p>
+            <div class="content">
+                Enthusiastic Learner, having 11 years of teaching experience with the good sense of responsibility.
+            </div>
+        </div>
+
+        <div class="card" data-aos="fade-left">
+            <img src="kangralkar.JPG" width="300px">
+            <h3>Smt kangralkarr</h3>
+            <p>Peon</p>
+        </div>
+        <div class="card" data-aos="fade-left">
+            <img src="kaku.JPG" width="300px">
+            <h3>Mrs Jyoti Buva </h3>
+            <p>Peon</p>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="fot-sec" data-aos="fade-left">
+            <h2>About Us</h2>
+            <p>Our school is dedicated to providing quality education to our students, preparing them for a successful
+                future.
+            </p>
+        </div>
+        <div class="fot-sec" data-aos="fade-left">
+            <h2>
+                Quick Links </h2>
+            <p> <a href="#">- Home</a></p>
+            <p><a href="#">- Faculty</a></p>
+            <p><a href="#">- Admission enquiry</a></p>
+            <p><a href="#">- Contact</a></p>
+        </div>
+        <div class="fot-sec" data-aos="fade-left">
+            <h2>
+                Have a Question ?</h2>
+            <p><img src="white location.png" width="20px"> - Belgaum, Karnataka</a></p>
+            <p><img src="white call.png" width="20px"> <a href="tel: +91 9986434604">- 9986434604</a></p>
+            <p><img src="white email.png" width="30px"> - ssv.official1957@gmail.com</p></a></p>
+        </div>
+
+    </div>
+    <div class="copyright">
+      Copyright &copy2023. All rights reserved. | This website is made by students of KLS GIT
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1000,
+        });
+    </script>
+
+</body>
+
+</html>
